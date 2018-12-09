@@ -20,7 +20,7 @@ const extractCommonChars = (str1, str2) => {
     return a;   
 }
 
-const checksum = () => {
+const commonChars = () => {
     fs.readFile('input', (err, data) => {
         arr = data.toString().split('\n');
         var str = '';
@@ -38,4 +38,4 @@ const checksum = () => {
     });
 }
 
-checksum();
+commonChars();
